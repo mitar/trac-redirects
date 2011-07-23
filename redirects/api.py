@@ -61,7 +61,7 @@ class Redirects(Component):
 
         db.commit()
 
-        self.log.info('Upgraded redirects schema version from %d to %d', self.found_db_version, db_default.version)
+        self.log.info('Upgraded %s schema version from %d to %d', db_default.name, self.found_db_version, db_default.version)
 
     # IAdminPanelProvider methods
 
